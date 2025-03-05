@@ -1,0 +1,154 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Fundo da página */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 20px;
+  }
+  
+  /* Estilo do container de login */
+  .geralRegistro {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Animação de fade-in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilo do título */
+  .geralRegistro h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  
+  /* Estilização dos inputs */
+  .registro input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .registro input:focus {
+    border-color: #007BFF;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Estilo dos botões */
+  .bt {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .bt button {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  /* Botão de Login */
+  .bt button:first-child {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .bt button:first-child:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Botão de Cadastro */
+  .bt button:last-child {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .bt button:last-child:hover {
+    background-color: #218838;
+  }
+  
+  /* Link para redefinição de senha */
+  .loginReset {
+    text-align: right;
+    margin-bottom: 15px;
+  }
+  
+  .loginReset a {
+    color: #007BFF;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .loginReset a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Botão do Google */
+  .google a {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #DB4437;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .google a:hover {
+    background-color: #c1351d;
+  }
+  
+  /* Estilo responsivo */
+  @media (max-width: 480px) {
+    .geralRegistro {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .bt {
+      flex-direction: column;
+    }
+  
+    .bt button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
